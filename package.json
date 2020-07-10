@@ -3,21 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/dev",
     "build": "node scripts/build",
-    "start": "node scripts/start",
+    "dev": "node scripts/dev",
+    "lint": "yarn lint:js",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "start": "node scripts/start"
   },
   "dependencies": {
-    "@nuxt/http": "^0.5.7",
-    "nuxt": "^2.13.3"
+    "nuxt-start": "^2.13.3"
   },
   "devDependencies": {
+    "@nuxt/http": "^0.5.7",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "nuxt": "^2.13.3"
   }
 }
