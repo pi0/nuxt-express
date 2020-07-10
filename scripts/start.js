@@ -4,7 +4,8 @@ const { loadNuxt } = require('nuxt-start')
 
 const main = async () => {
   const nuxt = await loadNuxt({ for: 'start' })
-  await nuxt.listen()
+  const { url } = await nuxt.listen()
+  console.log('Listening on ' + url)
 }
 
 main().catch((err) => {
